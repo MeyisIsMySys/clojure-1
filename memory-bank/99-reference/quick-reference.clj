@@ -237,6 +237,37 @@ true false nil
 (ClassName. args)
 
 ;; ===============================
+;; DEVELOPMENT WORKFLOW
+;; ===============================
+
+;; Starting REPL
+clj                      ; Start Clojure REPL
+bb repl                  ; Start Babashka REPL
+
+;; Project Creation
+;; Install deps-new (one time):
+;; clj -Ttools install-latest :lib io.github.seancorfield/deps-new :as new
+
+;; Create new project:
+;; clj -Tnew app :name my-project
+
+;; With mise tasks:
+mise run repl            ; Start REPL
+mise run bb-repl         ; Start Babashka REPL
+mise run new-project my-app ; Create new project
+mise run test-setup      ; Test environment
+mise run memory-bank     ; Open learning materials
+
+;; REPL Exit
+(System/exit 0)          ; Exit REPL programmatically
+;; Ctrl+C or Cmd+C        ; Keyboard interrupt
+;; In VS Code: Debug -> Stop
+
+;; Build and Test (in project)
+clj -T:build test        ; Run tests
+clj -T:build ci          ; Full CI build
+
+;; ===============================
 ;; MEMORY AIDS
 ;; ===============================
 

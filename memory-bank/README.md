@@ -25,23 +25,24 @@ memory-bank/
 
 ### Beginner (Weeks 1-4)
 1. **Fundamentals** - Basic syntax, REPL usage, data types
-2. **Data structures** - Lists, vectors, maps, sets - the heart of Clojure
-3. **Functions** - Functions as first-class citizens, higher-order functions
-4. **Flow control** - Conditionals, loops, iteration patterns
+2. **Project Setup** - Creating and managing Clojure projects
+3. **Data structures** - Lists, vectors, maps, sets - the heart of Clojure
+4. **Functions** - Functions as first-class citizens, higher-order functions
+5. **Flow control** - Conditionals, loops, iteration patterns
 
 ### Intermediate (Weeks 5-8)
-5. **Namespaces** - Code organization and module system
-6. **Java interoperability** - Leveraging the JVM ecosystem
-7. **Testing** - Writing tests with clojure.test
+6. **Namespaces** - Code organization and module system
+7. **Java interoperability** - Leveraging the JVM ecosystem
+8. **Testing** - Writing tests with clojure.test
 
 ### Advanced (Weeks 9-12)
-8. **Macros** - Metaprogramming and code transformation
-9. **Concurrency** - Atoms, refs, agents, futures
-10. **Web development** - Building web applications with Ring/Compojure
+9. **Macros** - Metaprogramming and code transformation
+10. **Concurrency** - Atoms, refs, agents, futures
+11. **Web development** - Building web applications with Ring/Compojure
 
 ### Mastery (Ongoing)
-11. **Practice regularly** - Exercises and real-world projects
-12. **Contribute to open source** - Apply your skills
+12. **Practice regularly** - Exercises and real-world projects
+13. **Contribute to open source** - Apply your skills
 
 ## 🚀 Quick Start
 

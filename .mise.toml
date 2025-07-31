@@ -40,8 +40,8 @@ description = "Start Babashka REPL"
 run = "bb repl"
 
 [tasks.new-project]
-description = "Create a new Clojure project with Leiningen"
-run = "lein new app {{.CLI_ARGS}}"
+description = "Create a new Clojure project with Clojure CLI"
+run = "clj -Tnew app :name ${CLI_ARGS:-my-app}"
 
 [tasks.test-setup]
 description = "Test that all Clojure tools are working"
@@ -64,9 +64,14 @@ run = [
 [tasks.exercises]
 description = "Open beginner exercises"
 run = "open memory-bank/99-exercises/beginner-exercises.clj"
+
 [tasks.quick-ref]
 description = "Open quick reference guide"
 run = "open memory-bank/99-reference/quick-reference.clj"
+
+[tasks.project-setup]
+description = "Open project setup guide"
+run = "open memory-bank/01-fundamentals/03-project-setup.clj"
 
 # Settings for this project
 [settings]

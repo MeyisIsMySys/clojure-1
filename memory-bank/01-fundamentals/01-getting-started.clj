@@ -94,4 +94,29 @@ nil         ; represents null/empty
 ;; - Data structures are immutable by default
 ;; - Functions are first-class citizens
 
+;; 8. Creating New Projects
+;; Use the Clojure CLI tools to create new projects:
+
+;; Install deps-new tool (one time setup):
+;; clj -Ttools install-latest :lib io.github.seancorfield/deps-new :as new
+
+;; Create a new application project:
+;; clj -Tnew app :name my-project-name
+
+;; With mise task (if configured):
+;; mise run new-project my-project-name
+
+;; This creates a standard project structure:
+;; - deps.edn (dependencies and configuration)
+;; - src/ (source code)
+;; - test/ (tests)
+;; - build.clj (build script)
+;; - resources/ (resource files)
+
+;; 9. REPL Exit Commands
+;; To exit the REPL:
+;; - Type: (System/exit 0)
+;; - Or use: Ctrl+C (or Cmd+C on Mac)
+;; - In VS Code: Use Debug: Stop command
+
 ;; Practice: Try these expressions in your REPL!
