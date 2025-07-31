@@ -1,0 +1,33 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        // Reference: Most settings are in .vscode/settings.json
+        "workbench.colorTheme": "Default Light+",
+        "workbench.iconTheme": "vs-seti"
+    },
+    "extensions": {
+        "recommendations": [
+            // Essential Clojure development
+            "betterthantomorrow.calva", // Clojure & ClojureScript Interactive Programming
+            "tonsky.clojure-warrior", // Clojure syntax highlighting
+            // Development tools
+            "github.copilot", // AI pair programming
+            "github.copilot-chat", // AI chat assistant
+            // Documentation and learning
+            "shd101wyy.markdown-all-in-one", // Markdown support
+            "yzhang.markdown-all-in-one", // Enhanced markdown
+            "davidanson.vscode-markdownlint", // Markdown linting
+            // General productivity
+            "ms-vscode.vscode-json", // JSON support
+            "redhat.vscode-yaml", // YAML support
+            // File management
+            "alefragnani.project-manager", // Project management
+            "vscode-icons-team.vscode-icons" // Better file icons
+        ]
+    }
+}
+}

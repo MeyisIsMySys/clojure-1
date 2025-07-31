@@ -1,0 +1,73 @@
+# Mise configuration for Clojure Learning Environment
+# This file defines all the tools needed for learning Clojure
+# Run 'mise install' to install all tools
+
+[tools]
+# Java - Required for Clojure (LTS version)
+java = "openjdk-21"
+
+# Clojure CLI - Main Clojure development tool
+clojure = "latest"
+
+# Babashka - Fast-starting Clojure scripting environment
+babashka = "latest"
+
+# Node.js - For ClojureScript development and tooling
+nodejs = "lts"
+
+[env]
+# Editor configuration
+EDITOR = "code"
+
+# Clojure configuration for better REPL experience
+CLJ_CONFIG = ".clojure"
+
+[tasks.setup]
+description = "Set up Clojure development environment"
+run = [
+    "echo 'Setting up Clojure learning environment...'",
+    "clj --version",
+    "bb --version",
+    "echo 'Environment setup complete!'",
+]
+
+[tasks.repl]
+description = "Start Clojure REPL"
+run = "clj"
+
+[tasks.bb-repl]
+description = "Start Babashka REPL"
+run = "bb repl"
+
+[tasks.new-project]
+description = "Create a new Clojure project with Leiningen"
+run = "lein new app {{.CLI_ARGS}}"
+
+[tasks.test-setup]
+description = "Test that all Clojure tools are working"
+run = [
+    "echo 'Testing Clojure installation...'",
+    "java -version",
+    "clj -e '(println \"Clojure CLI working:\" (clojure-version))'",
+    "bb -e '(println \"Babashka working:\" *clojure-version*)'",
+    "echo 'All tools are working correctly!'",
+]
+
+[tasks.memory-bank]
+description = "Navigate to memory bank and start learning"
+run = [
+    "echo 'Welcome to your Clojure Memory Bank!'",
+    "echo 'Starting with fundamentals...'",
+    "open memory-bank/01-fundamentals/01-getting-started.clj",
+]
+
+[tasks.exercises]
+description = "Open beginner exercises"
+run = "open memory-bank/99-exercises/beginner-exercises.clj"
+[tasks.quick-ref]
+description = "Open quick reference guide"
+run = "open memory-bank/99-reference/quick-reference.clj"
+
+# Settings for this project
+[settings]
+experimental = true
